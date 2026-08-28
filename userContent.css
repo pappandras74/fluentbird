@@ -3,7 +3,5 @@
 @-moz-document url-prefix("about:blank") {
 	html, body {
 		overflow-x: auto !important;
-		overflow-wrap: anywhere !important;
-		word-break: break-word !important;
 	}
 }
