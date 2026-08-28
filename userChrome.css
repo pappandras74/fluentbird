@@ -1609,9 +1609,13 @@ calendar-editable-item[selected="true"].calendar-color-box {
 	max-width: 100% !important;
 }
 
+#calendar-summary-dialog .item-description-box,
 #calendar-summary-dialog iframe,
 #calendar-summary-dialog .item-description {
 	overflow-x: auto !important;
+	max-width: 100% !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
 }
 
 #calendar-summary-dialog #calendar-summary-dialog-custom-button-footer {
