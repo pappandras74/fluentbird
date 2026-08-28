@@ -17,6 +17,13 @@
    LAYOUT & WINDOW CHROME
    ===================================================== */
 
+:root {
+	--toolbox-background-color: #cde0ee !important;
+	--toolbar-background-color: #cde0ee !important;
+	--tabs-toolbar-background-color: #cde0ee !important;
+	--lwt-accent-color: #cde0ee !important;
+}
+
 :root,
 body,
 #messengerWindow {
@@ -68,6 +75,8 @@ body,
    HEADER, UNIFIED TOOLBAR & TAB BAR
    ===================================================== */
 
+:root #navigation-toolbox,
+:root[lwtheme] #navigation-toolbox,
 :root:not([lwtheme]) #navigation-toolbox,
 #navigation-toolbox,
 #titlebar,
@@ -1063,12 +1072,21 @@ global-search-bar {
 
 @media (prefers-color-scheme: dark) {
 
+	:root {
+		--toolbox-background-color: #202023 !important;
+		--toolbar-background-color: #202023 !important;
+		--tabs-toolbar-background-color: #202023 !important;
+		--lwt-accent-color: #202023 !important;
+	}
+
 	:root,
 	body,
 	#messengerWindow {
 		background-color: #202023 !important;
 	}
 
+	:root #navigation-toolbox,
+	:root[lwtheme] #navigation-toolbox,
 	:root:not([lwtheme]) #navigation-toolbox,
 	#navigation-toolbox,
 	#titlebar,
