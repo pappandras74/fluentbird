@@ -17,9 +17,16 @@
    LAYOUT & WINDOW CHROME
    ===================================================== */
 
+:root,
+body,
+#messengerWindow {
+	background-color: #cde0ee !important;
+}
+
 /* Rounded top-left clip on main content area */
 #messengerBody {
-	opacity: 90%;
+	opacity: 1 !important;
+	background-color: #f1f3f4 !important;
 	border-top-left-radius: 12px !important;
 	overflow: hidden !important;
 }
@@ -58,13 +65,31 @@
 
 
 /* =====================================================
-   TAB BAR
+   HEADER, UNIFIED TOOLBAR & TAB BAR
    ===================================================== */
 
-#tabs-toolbar {
-	background-color: #fff0 !important;
+:root:not([lwtheme]) #navigation-toolbox,
+#navigation-toolbox,
+#titlebar,
+#titlebar > *,
+unified-toolbar,
+#unifiedToolbarContainer,
+#unifiedToolbar,
+#unifiedToolbarContent,
+#toolbar-menubar,
+#tabs-toolbar,
+toolbar#tabs-toolbar,
+#tabmail-tabs,
+#tabmail-arrowscrollbox {
+	background-color: #cde0ee !important;
 	background-image: none !important;
+	border: none !important;
+	border-bottom: none !important;
+	border-block-end: none !important;
 	box-shadow: none !important;
+}
+
+#tabs-toolbar {
 	margin-bottom: 8px !important;
 }
 
@@ -105,7 +130,7 @@
    ===================================================== */
 
 #spacesToolbar {
-	background-color: #fff0 !important;
+	background-color: #cde0ee !important;
 	background-image: none !important;
 	border: 0px !important;
 }
@@ -1037,6 +1062,38 @@ global-search-bar {
    ===================================================== */
 
 @media (prefers-color-scheme: dark) {
+
+	:root,
+	body,
+	#messengerWindow {
+		background-color: #202023 !important;
+	}
+
+	:root:not([lwtheme]) #navigation-toolbox,
+	#navigation-toolbox,
+	#titlebar,
+	#titlebar > *,
+	unified-toolbar,
+	#unifiedToolbarContainer,
+	#unifiedToolbar,
+	#unifiedToolbarContent,
+	#toolbar-menubar,
+	#tabs-toolbar,
+	toolbar#tabs-toolbar,
+	#tabmail-tabs,
+	#tabmail-arrowscrollbox,
+	#spacesToolbar {
+		background-color: #202023 !important;
+		background-image: none !important;
+		border: none !important;
+		border-bottom: none !important;
+		border-block-end: none !important;
+		box-shadow: none !important;
+	}
+
+	#messengerBody {
+		background-color: #1c1c1f !important;
+	}
 
 	/* Custom maximise icon — dark (Windows only) */
 	@media (-moz-platform: windows) {
