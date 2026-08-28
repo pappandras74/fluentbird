@@ -1545,27 +1545,52 @@ calendar-editable-item[selected="true"].calendar-color-box {
 
 /* 6. Event Info / Summary Dialog */
 #calendar-summary-dialog {
-	min-width: 600px !important;
-	min-inline-size: 600px !important;
+	max-width: 650px !important;
+	min-width: 580px !important;
 	overflow-x: hidden !important;
 }
 
-#calendar-summary-dialog body,
+#calendar-summary-dialog body {
+	background-color: #cde0ee !important;
+	padding: 12px !important;
+	box-sizing: border-box !important;
+	overflow-x: hidden !important;
+}
+
 #calendar-event-summary-dialog {
-	overflow-x: hidden !important;
+	background-color: #ffffff !important;
+	border-radius: 14px !important;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+	margin: 0 auto !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+	overflow: hidden !important; 
 }
 
-#calendar-item-summary {
-	overflow-x: hidden !important;
-	max-width: 100% !important;
+#calendar-summary-dialog #summary-toolbox {
+	background-color: #f6f6f8 !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+	padding: 4px 8px !important;
 }
 
-#calendar-item-summary .item-description,
-#calendar-item-summary .item-description-box,
-#calendar-item-summary .calendar-summary-table td,
-#calendar-item-summary .calendar-summary-table th {
-	overflow-wrap: anywhere !important;
-	word-break: break-word !important;
+#calendar-summary-dialog #summary-toolbar {
+	background: transparent !important;
+	border: none !important;
+}
+
+#calendar-summary-dialog #calendar-item-summary {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 14px 18px !important;
+}
+
+#calendar-summary-dialog #calendar-summary-dialog-custom-button-footer {
+	background-color: #f6f6f8 !important;
+	border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+	margin: 0 !important;
+	padding: 10px 16px !important;
 }
 
 #calendar-summary-dialog-custom-button-footer button,
@@ -1680,6 +1705,27 @@ calendar-editable-item[selected="true"].calendar-color-box {
 
 	.location-desc {
 		color: #a1a1a6 !important;
+	}
+
+	#calendar-summary-dialog body {
+		background-color: #202023 !important;
+	}
+
+	#calendar-event-summary-dialog {
+		background-color: #1c1c1e !important;
+		border-color: rgba(255, 255, 255, 0.12) !important;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+	}
+
+	#calendar-summary-dialog #summary-toolbox,
+	#calendar-summary-dialog #calendar-summary-dialog-custom-button-footer {
+		background-color: #2c2c2e !important;
+		border-color: rgba(255, 255, 255, 0.1) !important;
+	}
+
+	#calendar-summary-dialog #calendar-item-summary {
+		background-color: transparent !important;
+		color: #f5f5f7 !important;
 	}
 
 	#calendar-summary-dialog-custom-button-footer button,
