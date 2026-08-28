@@ -1612,7 +1612,7 @@ calendar-editable-item[selected="true"].calendar-color-box {
 #calendar-summary-dialog .item-description-box,
 #calendar-summary-dialog iframe,
 #calendar-summary-dialog .item-description {
-	overflow-x: auto !important;
+	overflow: auto !important;
 	max-width: 100% !important;
 	width: 100% !important;
 	box-sizing: border-box !important;
