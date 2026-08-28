@@ -4,4 +4,14 @@
 	html, body {
 		overflow-x: auto !important;
 	}
+	* {
+		overflow: visible !important;
+	}
+	table, tr, td, div, p, span {
+		max-width: none !important;
+	}
+	a {
+		max-width: none !important;
+		white-space: nowrap !important;
+	}
 }
