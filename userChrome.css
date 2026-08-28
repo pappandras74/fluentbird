@@ -1314,18 +1314,29 @@ calendar-minimonth {
 	--mmHighlightColor: #ffffff !important;
 	padding: 0px !important;
 	min-inline-size: 100px !important;
+	max-width: 100% !important;
 }
 
-.minimonth-day {
+.minimonth-day,
+.minimonth-week {
 	padding: 2px !important;
-	font-size: 0.85rem !important;
+	font-size: 0.8rem !important;
+}
+
+.minimonth-cal-box {
+	padding: 0 !important;
 }
 
 .minimonth-month-box {
-	font-size: 0.95rem !important;
+	font-size: 0.75rem !important;
 	font-weight: 700 !important;
 	color: #1d1d1f !important;
 	margin-bottom: 6px !important;
+}
+
+.minimonth-nav-btn {
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /* 3. Top Navigation Header & Segmented View Switcher (#calendarViewHeader) */
