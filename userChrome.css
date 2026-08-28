@@ -1545,29 +1545,31 @@ calendar-editable-item[selected="true"].calendar-color-box {
 
 /* 6. Event Info / Summary Dialog */
 #calendar-summary-dialog {
+	min-width: 850px !important;
+	max-width: 850px !important;
+	min-height: 800px !important;
+	max-height: 800px !important;
 	overflow: hidden !important;
 }
 
 #calendar-summary-dialog body {
-	background-color: transparent !important;
-	padding: 0 !important;
+	background-color: #cde0ee !important;
+	padding: 12px !important;
 	margin: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	box-sizing: border-box !important;
 	overflow: hidden !important;
 }
 
 #calendar-summary-dialog dialog {
 	background-color: #ffffff !important;
-	border: 12px solid #cde0ee !important;
-	border-radius: 20px !important;
-	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1) !important;
-	
-	/* Fixed size applied directly to dialog so sizeToContent respects it */
-	min-width: 850px !important;
-	max-width: 850px !important;
-	min-height: 800px !important;
-	max-height: 800px !important;
-	
+	border-radius: 14px !important;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 	margin: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
 	box-sizing: border-box !important;
 	display: flex !important;
 	flex-direction: column !important;
@@ -1730,10 +1732,14 @@ calendar-editable-item[selected="true"].calendar-color-box {
 		color: #a1a1a6 !important;
 	}
 
+	#calendar-summary-dialog body {
+		background-color: #202023 !important;
+	}
+
 	#calendar-summary-dialog dialog {
 		background-color: #1c1c1e !important;
-		border-color: #202023 !important; /* The dark frame */
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+		border-color: rgba(255, 255, 255, 0.12) !important;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
 	}
 
 	#calendar-summary-dialog #summary-toolbox,
