@@ -1236,7 +1236,7 @@ calendar-multiweek-view {
 #calSidebar {
 	background-color: #f7f7f9 !important;
 	border-inline-end: 1px solid rgba(0, 0, 0, 0.08) !important;
-	padding-left: 36px !important;
+	padding-left: 44px !important;
 }
 
 #calSidebar .sidebar-panel-header {
@@ -1312,7 +1312,13 @@ calendar-minimonth {
 	--mmDaySelectedTodayBorderColor: transparent !important;
 	--mmHighlightBackground: #ff3b30 !important;
 	--mmHighlightColor: #ffffff !important;
-	padding: 8px !important;
+	padding: 0px !important;
+	min-inline-size: 100px !important;
+}
+
+.minimonth-day {
+	padding: 2px !important;
+	font-size: 0.85rem !important;
 }
 
 .minimonth-month-box {
