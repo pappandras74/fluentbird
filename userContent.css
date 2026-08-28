@@ -1,0 +1,9 @@
+/* Thunderbird userContent.css - Content & Editor Window Styling */
+
+@-moz-document url-prefix("about:blank") {
+	html, body {
+		overflow-x: hidden !important;
+		overflow-wrap: anywhere !important;
+		word-break: break-word !important;
+	}
+}
