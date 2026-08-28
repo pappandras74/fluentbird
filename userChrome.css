@@ -1215,3 +1215,467 @@ global-search-bar {
 .card-layout:not([data-properties~="dummy"]) .card-container {
 	min-height: 50px !important;
 }
+
+/* =====================================================
+   APPLE / macOS CALENDAR THEME FOR THUNDERBIRD
+   ===================================================== */
+
+/* Base Font & Calendar Layout */
+#calendarTabPanel,
+#calendarContent,
+calendar-minimonth,
+calendar-month-view,
+calendar-week-view,
+calendar-day-view,
+calendar-multiweek-view {
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* 1. Left Sidebar (calSidebar) */
+#calSidebar {
+	background-color: #f7f7f9 !important;
+	border-inline-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+#calSidebar .sidebar-panel-header {
+	background-color: transparent !important;
+	border: none !important;
+	padding: 10px 14px 6px 14px !important;
+}
+
+/* New Event button styled as Apple "+" pill / button */
+#sidePanelNewEvent {
+	background-color: #007aff !important;
+	color: #ffffff !important;
+	border-radius: 8px !important;
+	border: none !important;
+	font-weight: 600 !important;
+	box-shadow: 0 1px 3px rgba(0, 122, 255, 0.3) !important;
+	transition: background-color 0.15s ease !important;
+}
+#sidePanelNewEvent:hover {
+	background-color: #0062cc !important;
+}
+
+/* Calendar list styling */
+#calendar-list-pane {
+	background: transparent !important;
+}
+
+#calendarListHeader {
+	font-size: 0.75rem !important;
+	font-weight: 700 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.5px !important;
+	color: #8e8e93 !important;
+	padding: 8px 14px 4px 14px !important;
+}
+
+#calendar-list > li {
+	border-radius: 8px !important;
+	padding: 5px 10px !important;
+	margin: 2px 8px !important;
+	font-size: 0.88rem !important;
+	font-weight: 500 !important;
+	color: #1d1d1f !important;
+	transition: background-color 0.15s ease !important;
+}
+
+#calendar-list > li:hover {
+	background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+#calendar-list > li.selected {
+	background-color: rgba(0, 122, 255, 0.12) !important;
+}
+
+/* Calendar Checkbox circles */
+#calendar-list > li input[type="checkbox"],
+#calendar-list > li .checkbox-icon {
+	border-radius: 50% !important;
+}
+
+/* 2. Mini-Month Calendar Picker (Apple style) */
+calendar-minimonth {
+	--mmMainBackground: transparent !important;
+	--mmMainBorderColor: transparent !important;
+	--mmDayTodayColor: #ffffff !important;
+	--mmDayTodayBackground: #ff3b30 !important;
+	--mmDayTodayBorderColor: transparent !important;
+	--mmDayBorderRadius: 50% !important;
+	--mmDaySelectedColor: #1d1d1f !important;
+	--mmDaySelectedBackground: rgba(0, 0, 0, 0.08) !important;
+	--mmDaySelectedBorderColor: transparent !important;
+	--mmDaySelectedTodayBackground: #ff3b30 !important;
+	--mmDaySelectedTodayBorderColor: transparent !important;
+	--mmHighlightBackground: #ff3b30 !important;
+	--mmHighlightColor: #ffffff !important;
+	padding: 8px !important;
+}
+
+.minimonth-month-box {
+	font-size: 0.95rem !important;
+	font-weight: 700 !important;
+	color: #1d1d1f !important;
+	margin-bottom: 6px !important;
+}
+
+/* 3. Top Navigation Header & Segmented View Switcher (#calendarViewHeader) */
+#calendarViewHeader {
+	background-color: #ffffff !important;
+	border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+	padding: 10px 18px !important;
+	min-height: 48px !important;
+}
+
+/* Month / Interval Title (e.g. "April 2025") */
+#intervalDescription {
+	font-size: 1.35rem !important;
+	font-weight: 700 !important;
+	color: #1d1d1f !important;
+	letter-spacing: -0.3px !important;
+	margin-inline-start: 12px !important;
+}
+
+/* Navigation buttons (< Today >) */
+#calendarControls .button-group {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 4px !important;
+}
+
+#previousViewButton,
+#nextViewButton {
+	background-color: rgba(0, 0, 0, 0.04) !important;
+	border: 1px solid rgba(0, 0, 0, 0.08) !important;
+	border-radius: 50% !important;
+	width: 28px !important;
+	height: 28px !important;
+	min-width: 28px !important;
+	min-height: 28px !important;
+	padding: 0 !important;
+	cursor: pointer !important;
+	transition: background-color 0.15s ease !important;
+}
+
+#previousViewButton:hover,
+#nextViewButton:hover {
+	background-color: rgba(0, 0, 0, 0.09) !important;
+}
+
+#todayViewButton {
+	background-color: #ffffff !important;
+	border: 1px solid rgba(0, 0, 0, 0.15) !important;
+	border-radius: 6px !important;
+	padding: 3px 12px !important;
+	font-size: 0.82rem !important;
+	font-weight: 600 !important;
+	color: #1d1d1f !important;
+	cursor: pointer !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+	transition: background-color 0.15s ease !important;
+}
+
+#todayViewButton:hover {
+	background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* macOS Segmented Control for Views (Day | Week | Multiweek | Month) */
+#viewToggle.calview-toggle {
+	background-color: rgba(0, 0, 0, 0.06) !important;
+	border-radius: 8px !important;
+	padding: 2px !important;
+	display: inline-flex !important;
+	border: none !important;
+}
+
+.calview-toggle-item {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 6px !important;
+	padding: 4px 14px !important;
+	font-size: 0.82rem !important;
+	font-weight: 500 !important;
+	color: #555558 !important;
+	cursor: pointer !important;
+	transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.calview-toggle-item:hover {
+	color: #1d1d1f !important;
+}
+
+.calview-toggle-item[aria-selected="true"] {
+	background-color: #ffffff !important;
+	color: #1d1d1f !important;
+	font-weight: 600 !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 4. Calendar Main Grid & Views (#view-box) */
+#view-box {
+	background-color: #ffffff !important;
+}
+
+calendar-day-view,
+calendar-week-view,
+calendar-multiweek-view,
+calendar-month-view {
+	background-color: #ffffff !important;
+	--viewBackground: #ffffff !important;
+	--viewBorderColor: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Day column headers */
+.day-column-heading {
+	background-color: #ffffff !important;
+	border-block: 1px solid rgba(0, 0, 0, 0.07) !important;
+	border-inline-start: 1px solid rgba(0, 0, 0, 0.07) !important;
+	font-size: 0.85rem !important;
+	font-weight: 600 !important;
+	color: #8e8e93 !important;
+	padding: 6px 4px !important;
+}
+
+/* Today column header (macOS Red accent) */
+.day-column-today .day-column-heading {
+	color: #ff3b30 !important;
+	font-weight: 700 !important;
+}
+
+/* Time column on the left */
+.multiday-timebar {
+	background-color: #ffffff !important;
+	border-inline-end: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
+.multiday-timebar-time {
+	font-size: 0.78rem !important;
+	font-weight: 500 !important;
+	color: #8e8e93 !important;
+	padding-inline-end: 8px !important;
+}
+
+/* Grid hour lines */
+.multiday-hour-box {
+	border-block-end: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Current Time Indicator (Red line & Dot) */
+.timeIndicator {
+	border-block-start: 2px solid #ff3b30 !important;
+	opacity: 1 !important;
+	z-index: 10 !important;
+}
+
+.multiday-timebar-now-indicator {
+	background-color: #ff3b30 !important;
+	border: none !important;
+	border-radius: 50% !important;
+	inline-size: 8px !important;
+	block-size: 8px !important;
+	margin-block-start: -4px !important;
+	z-index: 11 !important;
+}
+
+/* 5. Event Cards (Pastel Apple Calendar style) */
+calendar-event-box:not([hidden]) {
+	margin-inline: 2px !important;
+}
+
+.calendar-color-box {
+	min-block-size: 18px !important;
+	border-radius: 6px !important;
+	/* Soft pastel background from calendar color */
+	background-color: color-mix(in srgb, var(--item-backcolor) 18%, #ffffff) !important;
+	color: #1d1d1f !important;
+	/* Vibrant solid left accent bar */
+	border-inline-start: 4px solid var(--item-backcolor) !important;
+	border-block: 1px solid color-mix(in srgb, var(--item-backcolor) 25%, transparent) !important;
+	border-inline-end: 1px solid color-mix(in srgb, var(--item-backcolor) 25%, transparent) !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+	padding: 2px 4px !important;
+	transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+}
+
+.calendar-color-box:hover {
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Selected Event Card */
+calendar-month-day-box-item[selected="true"].calendar-color-box,
+calendar-event-box[selected="true"].calendar-color-box,
+calendar-editable-item[selected="true"].calendar-color-box {
+	background-color: color-mix(in srgb, var(--item-backcolor) 28%, #ffffff) !important;
+	outline: 2px solid #007aff !important;
+	outline-offset: -1px !important;
+	box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25) !important;
+}
+
+/* Event Title & Details */
+.event-name-label {
+	font-weight: 600 !important;
+	font-size: 0.85rem !important;
+	color: #1d1d1f !important;
+}
+
+.item-time-label {
+	font-weight: 500 !important;
+	font-size: 0.78rem !important;
+	color: color-mix(in srgb, var(--item-backcolor) 80%, #1d1d1f) !important;
+}
+
+.location-desc {
+	font-size: 0.78rem !important;
+	color: #6e6e73 !important;
+}
+
+/* All-Day Events in Week/Day View */
+.allday-events-list .calendar-color-box {
+	border-radius: 4px !important;
+	border: none !important;
+	border-inline-start: none !important;
+	background-color: var(--item-backcolor) !important;
+	color: #ffffff !important;
+	font-weight: 600 !important;
+	padding: 2px 6px !important;
+	margin-block: 1px !important;
+}
+
+/* 6. Event Info / Summary Popover (macOS Info Card) */
+#calendar-summary-dialog,
+#calendar-item-summary,
+.calendar-invitation-panel-wrapper {
+	border-radius: 14px !important;
+	box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+	background-color: #ffffff !important;
+	border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+#calendar-summary-dialog-custom-button-footer button,
+.calendar-invitation-panel-response-buttons button {
+	border-radius: 8px !important;
+	padding: 5px 14px !important;
+	font-size: 0.85rem !important;
+	font-weight: 500 !important;
+	background-color: rgba(0, 0, 0, 0.06) !important;
+	border: none !important;
+	color: #1d1d1f !important;
+	cursor: pointer !important;
+	transition: background-color 0.15s ease !important;
+}
+
+#calendar-summary-dialog-custom-button-footer button:hover,
+.calendar-invitation-panel-response-buttons button:hover {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 7. Dark Mode Overrides for Calendar */
+@media (prefers-color-scheme: dark) {
+	#calSidebar {
+		background-color: #1c1c1e !important;
+		border-inline-end: 1px solid rgba(255, 255, 255, 0.1) !important;
+	}
+
+	#calendar-list > li {
+		color: #f5f5f7 !important;
+	}
+
+	#calendar-list > li:hover {
+		background-color: rgba(255, 255, 255, 0.08) !important;
+	}
+
+	calendar-minimonth {
+		--mmDaySelectedColor: #f5f5f7 !important;
+		--mmDaySelectedBackground: rgba(255, 255, 255, 0.15) !important;
+	}
+
+	.minimonth-month-box {
+		color: #f5f5f7 !important;
+	}
+
+	#calendarViewHeader,
+	#view-box,
+	calendar-day-view,
+	calendar-week-view,
+	calendar-multiweek-view,
+	calendar-month-view {
+		background-color: #1c1c1e !important;
+		--viewBackground: #1c1c1e !important;
+		--viewBorderColor: rgba(255, 255, 255, 0.1) !important;
+	}
+
+	#calendarViewHeader {
+		border-block-end: 1px solid rgba(255, 255, 255, 0.1) !important;
+	}
+
+	#intervalDescription {
+		color: #f5f5f7 !important;
+	}
+
+	#viewToggle.calview-toggle {
+		background-color: rgba(255, 255, 255, 0.1) !important;
+	}
+
+	.calview-toggle-item {
+		color: #a1a1a6 !important;
+	}
+
+	.calview-toggle-item:hover {
+		color: #ffffff !important;
+	}
+
+	.calview-toggle-item[aria-selected="true"] {
+		background-color: #2c2c2e !important;
+		color: #ffffff !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+	}
+
+	#todayViewButton {
+		background-color: #2c2c2e !important;
+		border: 1px solid rgba(255, 255, 255, 0.15) !important;
+		color: #f5f5f7 !important;
+	}
+
+	.day-column-heading,
+	.multiday-timebar {
+		background-color: #1c1c1e !important;
+		border-color: rgba(255, 255, 255, 0.08) !important;
+	}
+
+	.multiday-hour-box {
+		border-block-end: 1px solid rgba(255, 255, 255, 0.06) !important;
+	}
+
+	.calendar-color-box {
+		background-color: color-mix(in srgb, var(--item-backcolor) 25%, #2c2c2e) !important;
+		color: #f5f5f7 !important;
+		border-block: 1px solid color-mix(in srgb, var(--item-backcolor) 40%, transparent) !important;
+		border-inline-end: 1px solid color-mix(in srgb, var(--item-backcolor) 40%, transparent) !important;
+	}
+
+	.event-name-label {
+		color: #ffffff !important;
+	}
+
+	.item-time-label {
+		color: color-mix(in srgb, var(--item-backcolor) 60%, #ffffff) !important;
+	}
+
+	.location-desc {
+		color: #a1a1a6 !important;
+	}
+
+	#calendar-summary-dialog,
+	#calendar-item-summary,
+	.calendar-invitation-panel-wrapper {
+		background-color: #2c2c2e !important;
+		border-color: rgba(255, 255, 255, 0.12) !important;
+	}
+
+	#calendar-summary-dialog-custom-button-footer button,
+	.calendar-invitation-panel-response-buttons button {
+		background-color: rgba(255, 255, 255, 0.1) !important;
+		color: #f5f5f7 !important;
+	}
+}
