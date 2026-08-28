@@ -1544,6 +1544,30 @@ calendar-editable-item[selected="true"].calendar-color-box {
 }
 
 /* 6. Event Info / Summary Dialog */
+#calendar-summary-dialog {
+	min-width: 600px !important;
+	min-inline-size: 600px !important;
+	overflow-x: hidden !important;
+}
+
+#calendar-summary-dialog body,
+#calendar-event-summary-dialog {
+	overflow-x: hidden !important;
+}
+
+#calendar-item-summary {
+	overflow-x: hidden !important;
+	max-width: 100% !important;
+}
+
+#calendar-item-summary .item-description,
+#calendar-item-summary .item-description-box,
+#calendar-item-summary .calendar-summary-table td,
+#calendar-item-summary .calendar-summary-table th {
+	overflow-wrap: anywhere !important;
+	word-break: break-word !important;
+}
+
 #calendar-summary-dialog-custom-button-footer button,
 .calendar-invitation-panel-response-buttons button {
 	border-radius: 8px !important;
@@ -1560,24 +1584,6 @@ calendar-editable-item[selected="true"].calendar-color-box {
 #calendar-summary-dialog-custom-button-footer button:hover,
 .calendar-invitation-panel-response-buttons button:hover {
 	background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-#calendar-summary-dialog-custom-button-footer button,
-.calendar-invitation-panel-response-buttons button {
-	border-radius: 8px !important;
-	padding: 6px 16px !important;
-	font-size: 0.85rem !important;
-	font-weight: 500 !important;
-	background-color: rgba(0, 0, 0, 0.07) !important;
-	border: none !important;
-	color: #1d1d1f !important;
-	cursor: pointer !important;
-	transition: background-color 0.15s ease !important;
-}
-
-#calendar-summary-dialog-custom-button-footer button:hover,
-.calendar-invitation-panel-response-buttons button:hover {
-	background-color: rgba(0, 0, 0, 0.12) !important;
 }
 
 /* 7. Dark Mode Overrides for Calendar */
