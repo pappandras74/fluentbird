@@ -1611,7 +1611,7 @@ calendar-editable-item[selected="true"].calendar-color-box {
 
 #calendar-summary-dialog iframe,
 #calendar-summary-dialog .item-description {
-	overflow-x: hidden !important;
+	overflow-x: auto !important;
 }
 
 #calendar-summary-dialog #calendar-summary-dialog-custom-button-footer {
