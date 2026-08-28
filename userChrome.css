@@ -1236,6 +1236,7 @@ calendar-multiweek-view {
 #calSidebar {
 	background-color: #f7f7f9 !important;
 	border-inline-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+	padding-left: 36px !important;
 }
 
 #calSidebar .sidebar-panel-header {
