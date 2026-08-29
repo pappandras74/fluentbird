@@ -5,3 +5,8 @@
    - Spaces Toolbar background: #cde0ee
    - Messenger Body background: #f1f3f4 (opacity 1.0)
 */
+
+/* Hide Archives folder from folder tree */
+#folderTree li[data-folder-type="archive"] {
+	display: none !important;
+}

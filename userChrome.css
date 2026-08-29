@@ -145,6 +145,10 @@ toolbar#tabs-toolbar,
 	border: 0px !important;
 }
 
+#spacesToolbar .spaces-toolbar-top-container {
+	margin-top: 91px !important;
+}
+
 /* Hide default icon images; replaced via background-image below */
 #mailButton img,
 #addressBookButton img,
