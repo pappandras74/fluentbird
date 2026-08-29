@@ -493,14 +493,27 @@ tr.card-layout.children span.subject {
 	font-size: 0.95em !important;
 }
 
-/* Unread indicator dot */
+/* Unread indicator dot (hidden on read messages, Apple-blue on unread/new) */
 #threadTree[rows="thread-card"] .card-layout td .card-container .read-status {
 	content: var(--read-status-icon) !important;
 	height: var(--read-status-size) !important;
 	width: var(--read-status-size) !important;
-	fill: #4ade8000 !important;
-	stroke: #16a34a00 !important;
+	fill: transparent !important;
+	stroke: transparent !important;
 	margin-left: 0 !important;
+}
+
+#threadTree[rows="thread-card"] .card-layout:is([data-properties~="unread"], [data-properties~="new"]) td .card-container .read-status {
+	content: var(--icon-dot) !important;
+	fill: #007aff !important;
+	stroke: #007aff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	#threadTree[rows="thread-card"] .card-layout:is([data-properties~="unread"], [data-properties~="new"]) td .card-container .read-status {
+		fill: #0a84ff !important;
+		stroke: #0a84ff !important;
+	}
 }
 
 /* Unread indicator inline offset */
