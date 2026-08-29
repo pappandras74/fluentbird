@@ -226,13 +226,17 @@ toolbar#tabs-toolbar,
 
 
 /* =====================================================
-   FOLDER TREE
+   FOLDER TREE & PANE
    ===================================================== */
 
-/* Account-level row: larger text, no icon */
+#folderPane {
+	padding-inline-start: 18px !important;
+}
+
+/* Account-level row: compact font size, clean hierarchy */
 #folderTree li[data-server-type] > .container > .name {
-	font-weight: normal !important;
-	font-size: 1.18rem !important;
+	font-weight: 600 !important;
+	font-size: 0.92rem !important;
 }
 
 #folderTree li[data-server-type]:not(:first-of-type) > .container {

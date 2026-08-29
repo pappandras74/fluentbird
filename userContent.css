@@ -24,3 +24,15 @@
 	}
 }
 
+/* Mail Folder Pane Spacing & Account Font Size */
+@-moz-document url-prefix("chrome://messenger/content/messenger/about3Pane.xhtml"), url-prefix("about:3pane") {
+	#folderPane {
+		padding-inline-start: 18px !important;
+	}
+	#folderTree li[data-server-type] > .container > .name {
+		font-weight: 600 !important;
+		font-size: 0.92rem !important;
+	}
+}
+
+
