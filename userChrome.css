@@ -230,13 +230,32 @@ toolbar#tabs-toolbar,
    ===================================================== */
 
 #folderPane {
-	padding-inline-start: 18px !important;
+	padding-inline-start: 46px !important;
 }
 
-/* Account-level row: compact font size, clean hierarchy */
+#folderPaneHeaderBar {
+	flex-direction: row !important;
+	justify-content: flex-start !important;
+	gap: 6px !important;
+}
+
+#folderPaneWriteMessage {
+	order: 1 !important;
+}
+
+#folderPaneGetMessages {
+	order: 2 !important;
+}
+
+#folderPaneMoreButton {
+	order: 3 !important;
+	margin-inline-start: auto !important;
+}
+
+/* Account-level row: 1 font-step larger (1.02rem), clean hierarchy */
 #folderTree li[data-server-type] > .container > .name {
 	font-weight: 600 !important;
-	font-size: 0.92rem !important;
+	font-size: 1.02rem !important;
 }
 
 #folderTree li[data-server-type]:not(:first-of-type) > .container {
