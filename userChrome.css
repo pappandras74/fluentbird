@@ -1655,12 +1655,33 @@ calendar-editable-item[selected="true"].calendar-color-box {
 	flex: 1 !important;
 	overflow-y: auto !important;
 	overflow-x: hidden !important;
+	box-sizing: border-box !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	min-width: 0 !important;
+}
+
+#calendar-summary-dialog .item-summary-box,
+#calendar-summary-dialog .item-attendees-description,
+#calendar-summary-dialog .item-description-box {
+	width: 100% !important;
+	max-width: 100% !important;
+	min-width: 0 !important;
+	box-sizing: border-box !important;
 }
 
 #calendar-summary-dialog .item-attendees-list-container,
 #calendar-summary-dialog .attendees-list {
 	flex-wrap: wrap !important;
 	max-width: 100% !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+#calendar-summary-dialog .calendar-summary-table {
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box !important;
 }
 
 #calendar-summary-dialog .item-description-box,
