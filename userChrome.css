@@ -1875,3 +1875,14 @@ calendar-editable-item[selected="true"].calendar-color-box {
 		border-block-start-color: rgba(255, 255, 255, 0.08) !important;
 	}
 }
+
+/* =====================================================
+   PREFERENCES & ACCOUNT SETTINGS SIDEBAR SPACING
+   Ensure proper breathing room next to Spaces Toolbar
+   ===================================================== */
+
+#pref-category-box,
+#accountTreeBox {
+	padding-inline-start: 16px !important;
+}
+

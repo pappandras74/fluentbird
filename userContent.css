@@ -15,3 +15,12 @@
 		white-space: nowrap !important;
 	}
 }
+
+/* Preferences (Settings) & Account Settings Sidebar Spacing */
+@-moz-document url-prefix("about:preferences"), url-prefix("chrome://messenger/content/preferences/preferences.xhtml"), url-prefix("about:accountsettings"), url-prefix("chrome://messenger/content/messenger/AccountManager.xhtml") {
+	#pref-category-box,
+	#accountTreeBox {
+		padding-inline-start: 16px !important;
+	}
+}
+
