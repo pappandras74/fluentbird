@@ -20,7 +20,7 @@
 @-moz-document url-prefix("about:preferences"), url-prefix("chrome://messenger/content/preferences/preferences.xhtml"), url-prefix("about:accountsettings"), url-prefix("chrome://messenger/content/messenger/AccountManager.xhtml") {
 	#pref-category-box,
 	#accountTreeBox {
-		padding-inline-start: 16px !important;
+		padding-inline-start: 48px !important;
 	}
 }
 
