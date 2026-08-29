@@ -104,20 +104,55 @@ toolbar#tabs-toolbar,
 }
 
 .tabmail-tab {
-	border-radius: 6px !important;
+	border-radius: 8px !important;
+	transition: background-color 0.15s ease, color 0.15s ease !important;
 }
 
+/* Active tab (macOS style): solid white card with subtle shadow, bold text and Apple blue accent line */
 .tabmail-tab[selected="true"] {
-	box-shadow: 0 2px 8px -5px #9c9c9c !important;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.06) !important;
 }
 
 .tab-background[selected="true"] {
-	background-color: #ffffffb8 !important;
+	background-color: #ffffff !important;
+	background-image: none !important;
+	border-radius: 8px !important;
 }
 
-/* Remove active-tab indicator line */
-.tab-line {
+.tabmail-tab[selected="true"] .tab-label,
+.tabmail-tab[selected="true"] .tab-text {
+	font-weight: 700 !important;
+	color: #0f172a !important;
+}
+
+/* Active-tab Apple blue accent indicator line */
+.tab-line[selected="true"] {
+	height: 3px !important;
+	background-color: #007aff !important;
+	border-radius: 2px !important;
+	margin: 2px 8px 0 8px !important;
+	opacity: 1 !important;
+}
+
+.tab-line:not([selected="true"]) {
 	height: 0px !important;
+}
+
+/* Inactive tabs: muted text, subtle hover */
+.tabmail-tab:not([selected="true"]) .tab-label,
+.tabmail-tab:not([selected="true"]) .tab-text {
+	color: #334155 !important;
+	opacity: 0.75 !important;
+}
+
+.tabmail-tab:hover:not([selected="true"]) .tab-background {
+	background-color: rgba(255, 255, 255, 0.45) !important;
+	border-radius: 8px !important;
+}
+
+.tabmail-tab:hover:not([selected="true"]) .tab-label,
+.tabmail-tab:hover:not([selected="true"]) .tab-text {
+	opacity: 1 !important;
 }
 
 #tabmail-arrowscrollbox {
@@ -1181,12 +1216,46 @@ global-search-bar {
 		background-color: #272727 !important;
 	}
 
+	/* Active tab (macOS style in dark mode) */
 	.tabmail-tab[selected="true"] {
-		box-shadow: 0 2px 8px -5px #9c9c9c !important;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
 	}
 
 	.tab-background[selected="true"] {
-		background-color: #262629b8 !important;
+		background-color: #2c2c30 !important;
+		background-image: none !important;
+		border-radius: 8px !important;
+	}
+
+	.tabmail-tab[selected="true"] .tab-label,
+	.tabmail-tab[selected="true"] .tab-text {
+		font-weight: 700 !important;
+		color: #ffffff !important;
+	}
+
+	/* Active-tab Apple blue indicator line in dark mode */
+	.tab-line[selected="true"] {
+		height: 3px !important;
+		background-color: #0a84ff !important;
+		border-radius: 2px !important;
+		margin: 2px 8px 0 8px !important;
+		opacity: 1 !important;
+	}
+
+	.tabmail-tab:not([selected="true"]) .tab-label,
+	.tabmail-tab:not([selected="true"]) .tab-text {
+		color: #94a3b8 !important;
+		opacity: 0.75 !important;
+	}
+
+	.tabmail-tab:hover:not([selected="true"]) .tab-background {
+		background-color: rgba(255, 255, 255, 0.08) !important;
+		border-radius: 8px !important;
+	}
+
+	.tabmail-tab:hover:not([selected="true"]) .tab-label,
+	.tabmail-tab:hover:not([selected="true"]) .tab-text {
+		opacity: 1 !important;
 	}
 
 	.thread-card-subject-container {
