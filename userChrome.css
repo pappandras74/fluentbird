@@ -1937,7 +1937,8 @@ calendar-editable-item[selected="true"].calendar-color-box {
    ===================================================== */
 
 #pref-category-box,
-#accountTreeBox {
+#accountTreeBox,
+#sidebar:has(categories-box) {
 	padding-inline-start: 48px !important;
 }
 

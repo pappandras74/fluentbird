@@ -58,4 +58,15 @@
 	}
 }
 
+/* Add-ons and Themes (about:addons) Sidebar Spacing */
+@-moz-document url-prefix("about:addons"), url-prefix("chrome://mozapps/content/extensions/aboutaddons.html") {
+	:root {
+		--sidebar-width: calc(var(--size-sidebar, 200px) + 48px) !important;
+	}
+	#sidebar {
+		padding-inline-start: 48px !important;
+		box-sizing: border-box !important;
+	}
+}
+
 
