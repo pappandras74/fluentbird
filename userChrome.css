@@ -1599,8 +1599,8 @@ calendar-editable-item[selected="true"].calendar-color-box {
 
 /* 6. Event Info / Summary Dialog */
 #calendar-summary-dialog {
-	min-width: 850px !important;
-	max-width: 850px !important;
+	min-width: 950px !important;
+	max-width: 950px !important;
 	min-height: 800px !important;
 	max-height: 800px !important;
 	overflow: hidden !important;
@@ -1620,10 +1620,10 @@ calendar-editable-item[selected="true"].calendar-color-box {
 	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1) !important;
 	
 	/* HARDCODE the exact dimensions to perfectly match the window client area! */
-	width: 850px !important;
+	width: 950px !important;
 	height: 800px !important;
-	min-width: 850px !important;
-	max-width: 850px !important;
+	min-width: 950px !important;
+	max-width: 950px !important;
 	min-height: 800px !important;
 	max-height: 800px !important;
 	
