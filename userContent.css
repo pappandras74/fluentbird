@@ -70,15 +70,19 @@
 }
 
 /* Message Tab (Single Message View) Sidebar Spacing */
-@-moz-document url-prefix("about:message"), url-prefix("chrome://messenger/content/messenger/aboutMessage.xhtml") {
+@-moz-document url-prefix("about:message"), url-prefix("chrome://messenger/content/aboutMessage.xhtml"), url-prefix("chrome://messenger/content/messenger/aboutMessage.xhtml") {
 	#messagepaneboxwrapper {
+		margin-inline-start: 48px !important;
+		box-sizing: border-box !important;
+	}
+	#messageHeader {
 		padding-inline-start: 48px !important;
 		box-sizing: border-box !important;
 	}
 }
 
 /* Address Book Tab Sidebar Spacing */
-@-moz-document url-prefix("about:addressbook"), url-prefix("chrome://messenger/content/messenger/addressbook/aboutAddressBook.xhtml") {
+@-moz-document url-prefix("about:addressbook"), url-prefix("chrome://messenger/content/addressbook/aboutAddressBook.xhtml"), url-prefix("chrome://messenger/content/messenger/addressbook/aboutAddressBook.xhtml") {
 	#booksPane {
 		padding-inline-start: 48px !important;
 		box-sizing: border-box !important;
