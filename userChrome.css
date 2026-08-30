@@ -2035,3 +2035,12 @@ calendar-editable-item[selected="true"].calendar-color-box {
 	padding-inline-start: 48px !important;
 }
 
+
+
+/* Sidebar clearance for single message tabs and address book tabs */
+browser[src="about:message"],
+browser[id^="mailMessageTabBrowser"],
+browser[src="about:addressbook"],
+browser[id^="addressBookTabBrowser"] {
+	margin-inline-start: 46px !important;
+}
