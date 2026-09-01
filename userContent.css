@@ -73,9 +73,10 @@
 
 
 
-/* Global Search (Gloda) Sidebar Spacing */
-@-moz-document url-prefix("about:gloda"), url-prefix("chrome://messenger/content/glodaFacetView.xhtml"), url-prefix("chrome://messenger/content/messenger/glodaFacetView.xhtml") {
-	body {
-		padding-inline-start: 48px !important;
-	}
+
+/* Global Search (Gloda) Sidebar Spacing - No URL prefix to ensure it catches dynamic frames */
+
+#gloda-facet-view {
+	padding-inline-start: 48px !important;
+	box-sizing: border-box !important;
 }
