@@ -2044,3 +2044,8 @@ browser[src="about:addressbook"],
 browser[id^="addressBookTabBrowser"] {
 	margin-inline-start: 46px !important;
 }
+
+/* Fix Global Search (Gloda) Tab Overlap with Spaces Toolbar */
+vbox[type="glodaFacet"] {
+	margin-inline-start: 46px !important;
+}

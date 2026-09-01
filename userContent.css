@@ -74,9 +74,3 @@
 
 
 
-/* Global Search (Gloda) Sidebar Spacing - No URL prefix to ensure it catches dynamic frames */
-
-#gloda-facet-view {
-	padding-inline-start: 48px !important;
-	box-sizing: border-box !important;
-}
