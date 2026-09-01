@@ -2046,6 +2046,6 @@ browser[id^="addressBookTabBrowser"] {
 }
 
 /* Fix Global Search (Gloda) Tab Overlap with Spaces Toolbar */
-vbox[type="glodaFacet"] {
+vbox[id^="glodaTab"] {
 	margin-inline-start: 46px !important;
 }
